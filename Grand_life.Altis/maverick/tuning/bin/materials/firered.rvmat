@@ -1,0 +1,28 @@
+////////////////////////////////////////////////////////////////////
+//DeRap: World_Life.AltisBAKAKBAKBKABKA\maverick\tuning\bin\materials\firered.rvmat
+//Produced from mikero's Dos Tools Dll version 6.31
+//'now' is Fri Jun 01 11:37:30 2018 : 'file' last modified on Wed Oct 12 15:16:28 2016
+//http://dev-heaven.net/projects/list_files/mikero-pbodll
+////////////////////////////////////////////////////////////////////
+
+#define _ARMA_
+
+Ambient[] = {
+    0.71,
+    0,
+    0,
+    1
+};
+Diffuse[] = {
+    2,
+    0.71,
+    0,
+    1
+};
+specular[] = {
+    1,
+    0,
+    0,
+    1
+};
+specularPower = 15;

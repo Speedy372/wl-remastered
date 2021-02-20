@@ -1,0 +1,50 @@
+class FSM {
+    fsmName = "timeModules.fsm : Altis Life";
+    class States {
+        class Init {
+            name = "Init";
+            init = "private [""_skipDay"", ""_skipNight"", ""_method"", ""_fastNight"", ""_sunState""];"\n "_skipDay = [_this,0,8,[0]] call BIS_fnc_param;"\n "_fastNight = [_this,1,false,[true]] call BIS_fnc_param;"\n "_skipNight = [_this,2,12,[0]] call BIS_fnc_param;";
+            precondition = "";
+            class Links {
+                class isServer {
+                    priority = 0.000000;
+                    to = "Apply_Time_Multi";
+                    precondition = "";
+                    condition = "isServer";
+                    action = "";
+                };
+            };
+        };
+        class Apply_Time_Multi {
+            name = "Apply_Time_Multi";
+            init = "if(_fastNight && {sunOrMoon == 0}) then {"\n "	setTimeMultiplier _skipNight;"\n "} else {"\n "	setTimeMultiplier _skipDay;"\n "};"\n ""\n "private ""_sunState"";"\n "_sunState = sunOrMoon;";
+            precondition = "";
+            class Links {
+                class Linear_Multiplie {
+                    priority = 1.000000;
+                    to = "Exit";
+                    precondition = "";
+                    condition = "!_fastNight";
+                    action = "";
+                };
+                class Opposite_Sunstat {
+                    priority = 0.000000;
+                    to = "Apply_Time_Multi";
+                    precondition = "";
+                    condition = "sunOrMoon == 1 - _sunState";
+                    action = "";
+                };
+            };
+        };
+        class Exit {
+            name = "Exit";
+            init = "";
+            precondition = "";
+            class Links {};
+        };
+    };
+    initState = "Init";
+    finalStates[] = {
+        "Exit",
+    };
+};

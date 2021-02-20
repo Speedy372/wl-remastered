@@ -1,0 +1,28 @@
+////////////////////////////////////////////////////////////////////
+//DeRap: World_Life.AltisBAKAKBAKBKABKA\maverick\tuning\bin\materials\shine_blueocean.rvmat
+//Produced from mikero's Dos Tools Dll version 6.31
+//'now' is Fri Jun 01 11:37:30 2018 : 'file' last modified on Wed Oct 12 15:16:38 2016
+//http://dev-heaven.net/projects/list_files/mikero-pbodll
+////////////////////////////////////////////////////////////////////
+
+#define _ARMA_
+
+Ambient[] = {
+    0,
+    1,
+    1,
+    1
+};
+Diffuse[] = {
+    1,
+    1,
+    0,
+    1
+};
+specular[] = {
+    0.15,
+    0,
+    1,
+    0
+};
+specularPower = 20;

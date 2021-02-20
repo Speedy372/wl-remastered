@@ -1,0 +1,16 @@
+////////////////////////////////////////////////////////////////////
+//DeRap: World_Life.AltisBAKAKBAKBKABKA\maverick\tuning\bin\materials\shine_gold.rvmat
+//Produced from mikero's Dos Tools Dll version 6.31
+//'now' is Fri Jun 01 11:37:30 2018 : 'file' last modified on Wed Oct 12 15:16:41 2016
+//http://dev-heaven.net/projects/list_files/mikero-pbodll
+////////////////////////////////////////////////////////////////////
+
+#define _ARMA_
+
+specular[] = {
+    0.99,
+    0.969,
+    0.00784,
+    0.64
+};
+specularPower = 60;

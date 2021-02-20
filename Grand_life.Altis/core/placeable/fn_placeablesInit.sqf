@@ -1,0 +1,6 @@
+life_barrier_active = false;
+life_barrier_activeObj = ObjNull;
+life_placeablescop = [["Pachołek", "RoadCone_F"], ["Pachołek z lampką", "RoadCone_L_F"], ["Barierka", "RoadBarrier_F"], ["Mała barierka", "RoadBarrier_small_F"], ["Taśma", "TapeSign_F"], ["Bramka", "Land_BarGate_F"], ["Znak w lewo", "ArrowDesk_L_F"], ["Znak w prawo", "ArrowDesk_R_F"], ["Przenośna lampa (podwójna)", "Land_PortableLight_double_F"]];
+life_placeablesmed = [["Defib", "Land_Defibrillator_F"], ["Apteczka", "Land_FirstAidKit_01_open_F"], ["Nosze", "Land_Stretcher_01_F"], ["Worek", "Land_Bodybag_01_empty_blue_F"], ["Pachołek", "RoadCone_F"], ["Pachołek z lampką", "RoadCone_L_F"], ["Barierka", "RoadBarrier_F"], ["Mała barierka", "RoadBarrier_small_F"], ["Taśma", "TapeSign_F"], ["Bramka", "Land_BarGate_F"], ["Znak w lewo", "ArrowDesk_L_F"], ["Znak w prawo", "ArrowDesk_R_F"], ["Namiot Medyczny", "Land_MedicalTent_01_white_IDAP_open_F"], ["Przenośna lampa (podwójna)", "Land_PortableLight_double_F"]];
+life_bar_limit = 2500;
+life_bar_placey = [];

@@ -1,0 +1,1 @@
+vehicle player forceFlagTexture "textures\flaga.paa";

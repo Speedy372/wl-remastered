@@ -1,0 +1,1 @@
+["zabojstwo"] spawn mav_ttm_fnc_addExp;
