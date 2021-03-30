@@ -1,0 +1,14 @@
+private["_index", "_vehicle"];
+disableSerialization;
+if (!isNull(findDisplay 3494)) then {
+    if (nn_empInUse) exitWith {
+        hint "Pojazd zostal juz ostrzezony!";
+    };
+    nn_empInUse = true;
+    _index = lbCurSel(2902);
+    _vehicle = nn_last_vehicles select _index;
+    if (isNull _vehicle) exitWith {};
+    [_vehicle] remoteExec["life_fnc_vehicleWarned", crew _vehicle];
+    sleep 10;
+    nn_empInUse = false;
+};

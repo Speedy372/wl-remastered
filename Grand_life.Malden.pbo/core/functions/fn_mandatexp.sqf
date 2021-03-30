@@ -1,0 +1,1 @@
+#include "script_macros.hpp" ["mandat"] spawn mav_ttm_fnc_addExp;

@@ -1,0 +1,14 @@
+player addBackpack "B_carryall_cbr";
+player addheadgear "H_bandanna_surfer";
+[true, "tbacon", 1] call life_fnc_handleInv;
+[true, "tbacon", 1] call life_fnc_handleInv;
+[true, "tbacon", 1] call life_fnc_handleInv;
+[true, "waterBottle", 1] call life_fnc_handleInv;
+[true, "waterBottle", 1] call life_fnc_handleInv;
+[true, "waterBottle", 1] call life_fnc_handleInv;
+[true, "toolkit", 1] call life_fnc_handleInv;
+[true, "toolkit", 1] call life_fnc_handleInv;
+[true, "toolkit", 1] call life_fnc_handleInv;
+[true, "piwo", 1] call life_fnc_handleInv;
+[true, "pickaxe", 1] call life_fnc_handleInv;
+gl_money_cash = gl_money_cash + 5000;

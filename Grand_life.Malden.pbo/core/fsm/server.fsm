@@ -1,0 +1,49 @@
+class FSM {
+    fsmName = "Life Client FSM";
+    class States {
+        class Main_Init {
+            name = "Main_Init";
+            init = "private[""_lasttime""];"\n "_lasttime = time;";
+            precondition = "";
+            class Links {
+                class true {
+                    priority = 0.000000;
+                    to = "Split";
+                    precondition = "";
+                    condition = "true";
+                    action = "";
+                };
+            };
+        };
+        class Split {
+            name = "Split";
+            init = "diag_log ""Server FSM timer"";";
+            precondition = "";
+            class Links {
+                class Time_Check {
+                    priority = 0.000000;
+                    to = "Action";
+                    precondition = "";
+                    condition = "(time - _lasttime) > (15 * 60)";
+                    action = "";
+                };
+            };
+        };
+        class Action {
+            name = "Action";
+            init = "//Market stuff"\n "[] spawn life_fnc_marketChange;"\n ""\n "_lasttime = time;";
+            precondition = "";
+            class Links {
+                class true {
+                    priority = 0.000000;
+                    to = "Split";
+                    precondition = "";
+                    condition = "";
+                    action = "";
+                };
+            };
+        };
+    };
+    initState = "Main_Init";
+    finalStates[] = {};
+};
